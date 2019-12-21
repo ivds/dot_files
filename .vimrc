@@ -29,12 +29,15 @@ Plugin 'mileszs/ack.vim'
 Plugin 'dense-analysis/ale'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'semibran/vim-colors-synthetic'
+Plugin 'Yggdroot/indentLine'
+"===color schemes===============================
 Plugin 'vim-scripts/dante.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'plainfingers/black_is_the_color'
 Plugin 'chr4/jellygrass.vim'
 Plugin 'gkjgh/cobalt'
 Plugin 'rmnv/vim-simple-colors'
+"======================================================================================
 call vundle#end()
 colorscheme cobalt
 "==========================================================================================
@@ -46,7 +49,7 @@ nnoremap <silent> <leader>v- :vertical resize +5<CR>
 nnoremap <silent> <leader>v+ :vertical resize -5<CR>
 nnoremap <silent> <Leader>h+ :exe "resize " . (winheight(0) + 2)<CR>
 nnoremap <silent> <Leader>h- :exe "resize " . (winheight(0) - 2)<CR>
-nnoremap <leader>nt :NERDTree<CR> 
+nnoremap <C-N> :NERDTreeToggle<CR> 
 nnoremap <leader>r :source ~/.vimrc<CR>:set term=xterm-256color<CR>
 nnoremap Q :@q<CR>
 "nnoremap <C-F> :FZ .
